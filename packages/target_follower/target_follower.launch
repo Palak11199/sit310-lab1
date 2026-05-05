@@ -1,0 +1,9 @@
+<launch>
+    <!-- Use environment variable VEHICLE_NAME -->
+    <group ns="$(env VEHICLE_NAME)">
+        <node pkg="target_follower"
+              type="target_follower.py"
+              name="target_follower"
+              output="screen"/>
+    </group>
+</launch>
